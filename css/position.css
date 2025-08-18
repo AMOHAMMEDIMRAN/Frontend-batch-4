@@ -1,0 +1,14 @@
+.box{
+    width: 500px;
+    height: 500px;
+    background: #000;
+    position: relative;
+    
+}
+.box div{
+    width: 150px;
+    height: 150px;
+    background: #e01515;
+    position: absolute;
+    right: 20px;
+}

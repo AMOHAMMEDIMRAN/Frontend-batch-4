@@ -1,0 +1,103 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0px auto;
+}
+
+header {
+    background: blueviolet;
+    padding: 10px 0px;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.header-wrapper div h1 {
+    color: inherit;
+}
+
+.header-wrapper nav a {
+    color: #fff;
+    font-size: 15px;
+}
+
+.header-wrapper nav {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0px;
+}
+
+.main-wrapper .content .title h1 {
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.main-wrapper .content .title h1 span {
+    color: blueviolet;
+}
+
+.main-wrapper .content .title p {
+    margin-bottom: 20px;
+}
+
+.main-wrapper .image {
+    text-align: right;
+}
+
+.main-wrapper .image img {
+    width: 90%;
+}
+
+.main-wrapper .content .btn-grp {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-wrapper .content .btn-grp #btn-yellow {
+    background: #f5f104;
+    padding: 10px 40px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 8px #f5f104;
+}
+
+.card-wrapper .title {
+    margin-bottom: 50px;
+}
+
+.card-wrapper .card-content {
+    display: flex;
+    gap: 10px;
+
+    margin-bottom: 100px;
+}
+
+.card-wrapper .card-content .card {
+    background: #2a5bff;
+    padding: 10px;
+    border-radius: 20px;
+}
