@@ -6,6 +6,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
+import UserDetails from './components/UserDetails'
+import { DataProvider } from './context/DataContext'
+import Data from './components/Data'
 
 const App = () => {
   // const [user, setUser] = useState([]);
@@ -31,12 +34,17 @@ const App = () => {
   return (
     <div>
       {/* <FetchData data={user} /> */}
-    
+
       <Router>
-        <Routes>
-              <Route path='/' index element={<HomePage />} />
-              <Route path='/about' element={<AboutPage />} />
-        </Routes>
+        <DataProvider>
+          <Routes>
+
+            <Route path='/' index element={<HomePage />} />
+            <Route path='/about' element={<AboutPage />} />
+            <Route path='/user/:id' element={<UserDetails />} />
+            <Route path='/data' element={<Data />} />
+          </Routes>
+        </DataProvider>
       </Router>
 
     </div>
